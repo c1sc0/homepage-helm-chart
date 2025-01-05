@@ -7,6 +7,29 @@ entries:
           description: Checksum of values added to the deployment to ensure config changes cause reload
     apiVersion: v2
     appVersion: v0.9.9
+    created: "2025-01-05T11:27:16.399403362Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 3.4.0
+    description: Chart for Homepage
+    digest: f6cd4e4f7a9ee32b4041eac298cd9a49603660c39a78b66d4ea0c2e7ec49e12b
+    icon: https://github.com/gethomepage/homepage/blob/main/public/mstile-150x150.png
+    maintainers:
+    - name: jameswynn
+    name: homepage
+    sources:
+    - https://github.com/jameswynn/helm-charts/charts/homepage
+    - https://github.com/gethomepage/homepage/
+    urls:
+    - https://github.com/c1sc0/homepage-helm-chart/releases/download/homepage-2.0.4/homepage-2.0.4.tgz
+    version: 2.0.4
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: added
+          description: Checksum of values added to the deployment to ensure config changes cause reload
+    apiVersion: v2
+    appVersion: v0.9.9
     created: "2025-01-05T10:39:27.445962455Z"
     dependencies:
     - name: common
@@ -24,4 +47,4 @@ entries:
     urls:
     - https://github.com/c1sc0/homepage-helm-chart/releases/download/homepage-2.0.3/homepage-2.0.3.tgz
     version: 2.0.3
-generated: "2025-01-05T10:39:27.446017007Z"
+generated: "2025-01-05T11:27:16.399420225Z"
