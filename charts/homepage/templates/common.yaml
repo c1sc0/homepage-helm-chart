@@ -48,6 +48,7 @@ advancedMounts:
 {{ end }}
 
 {{ include "homepage.configmap" . }}
+---
 {{ include "homepage.rbac" . }}
 
 {{/* Render the templates */}}
