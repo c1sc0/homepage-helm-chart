@@ -1,6 +1,6 @@
 {{- define "homepage.rbac" -}}
 {{ if .Values.enableRbac }}
-{{- $serviceAccountName := include "bjw-s.common.lib.chart.names.serviceAccountName" . -}}
+{{- $serviceAccountName := include "bjw-s.common.lib.pod.field.serviceAccountName" . -}}
 ---
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
