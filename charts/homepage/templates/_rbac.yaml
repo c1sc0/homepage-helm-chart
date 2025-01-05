@@ -1,7 +1,6 @@
 {{- define "homepage.rbac" -}}
 {{ if .Values.enableRbac }}
-{{- $serviceAccountName := include "bjw-s.common.lib.pod.field.serviceAccountName" . -}}
----
+{{- $serviceAccountName = get (include "bjw-s.common.lib.serviceAccount.getByIdentifier" (dict "rootContext" $rootContext "id" "default") | fromYaml) "name" -}}
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
 metadata:
